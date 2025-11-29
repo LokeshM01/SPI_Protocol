@@ -1,0 +1,3 @@
+ncsdfc ../slave_syn.sdf
+xrun -64bit -gui -access +rwc -v93 +neg_tchk -negdelay ../../presyn/tb.v ../master_syn.v /cad/TechLib/TSMC65/tcbn65gplus_200a/TSMCHOME/digital/Front_End/verilog/tcbn65gplus_200a/tcbn65gplus.v -top tb -sdf_verbose -sdf_cmd_file sdf_cmd -sdfstats sdfstats -maxdelays
+

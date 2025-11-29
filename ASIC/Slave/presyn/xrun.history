@@ -1,0 +1,12 @@
+s1(14Nov2025:17:43:53):  xrun -64bit -gui -access +rwc tb.v slave.v 
+s2(14Nov2025:17:45:58):  xrun -64bit -gui -access +rwc tb.v slave.v 
+s3(14Nov2025:17:49:01):  xrun -64bit -gui -access +rwc tb.v slave.v 
+s4(14Nov2025:17:57:17):  xrun -64bit -gui -access +rwc tb.v slave.v 
+s5(14Nov2025:18:02:20):  xrun -64bit -gui -access +rwc tb.v slave.v 
+s6(14Nov2025:18:05:34):  xrun -64bit -gui -access +rwc tb.v slave_top.v 
+s7(14Nov2025:18:06:05):  xrun -64bit -gui -access +rwc tb.v slave.v 
+s8(14Nov2025:18:09:51):  xrun -64bit -gui -access +rwc tb.v slave.v 
+s9(14Nov2025:18:12:44):  xrun -64bit -gui -access +rwc tb.v slave.v 
+s10(14Nov2025:18:13:58):  xrun -64bit -gui -access +rwc tb.v slave.v 
+s11(14Nov2025:18:16:08):  xrun -64bit -gui -access +rwc tb.v slave.v 
+s12(15Nov2025:09:47:49):  xrun -64bit -gui -access +rwc tb.v slave.v 

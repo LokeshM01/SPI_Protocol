@@ -1,0 +1,621 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[16:57:36.275937] Configured Lic search path (21.01-s002): 5280@14.139.1.126
+
+Version: 21.19-s055_1, built Wed May 29 04:03:07 PDT 2024
+Options: 
+Date:    Fri Nov 14 16:57:36 2025
+Host:    sscd48.iitk.ac.in (x86_64 w/Linux 4.18.0-553.52.1.el8_10.x86_64) (16cores*24cpus*1physical cpu*13th Gen Intel(R) Core(TM) i7-13700 30720KB) (65345108KB)
+PID:     18940
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+
+[16:57:37.139632] Periodic Lic check successful
+[16:57:37.139640] Feature usage summary:
+[16:57:37.139640] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (4 seconds elapsed).
+
+WARNING: This version of the tool is 534 days old.
+@genus:root: 1> source genus_script_cleaned.tcl
+Sourcing './genus_script_cleaned.tcl' (Fri Nov 14 16:57:55 IST 2025)...
+#@ Begin verbose source ./genus_script_cleaned.tcl
+@file(genus_script_cleaned.tcl) 1: set_db information_level 4
+  Setting attribute of root '/': 'information_level' = 4
+@file(genus_script_cleaned.tcl) 2: set library {tcbn65gpluswc_ccs.lib}
+@file(genus_script_cleaned.tcl) 3: set_db lib_search_path {/cad/TechLib/TSMC65/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65gplus_200a}
+  Setting attribute of root '/': 'lib_search_path' = /cad/TechLib/TSMC65/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65gplus_200a
+@file(genus_script_cleaned.tcl) 4: set_db library $library
+
+Threads Configured:3
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'library_features' encountered. Ignoring (File /cad/TechLib/TSMC65/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65gplus_200a/tcbn65gpluswc_ccs.lib, Line 69)
+        : Check to see if this construct is really needed for synthesis. Many liberty constructs are not actually required.
+
+  Message Summary for Library tcbn65gpluswc_ccs.lib:
+  **************************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  **************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'tcbn65gpluswc_ccs.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'BHD/Z' has no function.
+        : If the remainder of this library cell's semantic checks are successful, it will be considered as a timing-model (because one of its outputs does not have a valid function.
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD20'
+        : To make the cell usable, change the value of 'dont_use' attribute to false.
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD24'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD20'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD24'
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP64' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP64' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP2' must have an output pin.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-9'.
+  Setting attribute of root '/': 'library' = tcbn65gpluswc_ccs.lib
+@file(genus_script_cleaned.tcl) 5: set BASEDIR "../presyn"
+@file(genus_script_cleaned.tcl) 6: set OUTDIR "."
+@file(genus_script_cleaned.tcl) 7: set VERILOG_IN1 $BASEDIR/slave.v
+@file(genus_script_cleaned.tcl) 8: set VERILOG_OUT $OUTDIR/slave_syn.v
+@file(genus_script_cleaned.tcl) 9: set SDF_OUT $OUTDIR/slave_syn.sdf
+@file(genus_script_cleaned.tcl) 10: set SDC_OUT $OUTDIR/slave_syn.sdc
+@file(genus_script_cleaned.tcl) 11: read_hdl -v2001 $VERILOG_IN1
+@file(genus_script_cleaned.tcl) 12: elaborate 
+  Library has 441 usable logic and 280 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'slave_top' from file '../presyn/slave.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'spi_slave_fsm_MY_ID0' from file '../presyn/slave.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'slave_ram' from file '../presyn/slave.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'mem' in module 'slave_ram' in file '../presyn/slave.v' on line 16.
+Error   : All assignments within a conditional statement should be either all blocking or all non-blocking. [CDFG-463] [elaborate]
+        : Assignment to 'next_cmd' in file '../presyn/slave.v' on line 97.
+        : The following example shows an unallowed mix of blocking and non-blocking assignments.
+    if (in)
+        out = data1;
+    else
+        out <= data2;
+Info    : Deleting HDL design. [CDFG-305]
+        : Design 'spi_slave_fsm_MY_ID0'.
+        : Designs are often deleted because of elaboration errors. Look for previous errors and try to resolve them.
+Info    : Deleting HDL design. [CDFG-305]
+        : Design 'slave_top'.
+Info    : Unable to elaborate the design. [ELAB-4]
+        : Module 'slave_top' contains errors and cannot be elaborated.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+#@ End verbose source ./genus_script_cleaned.tcl
+1
+@genus:root: 2> source genus_script_cleaned.tcl
+Sourcing './genus_script_cleaned.tcl' (Fri Nov 14 17:09:14 IST 2025)...
+#@ Begin verbose source ./genus_script_cleaned.tcl
+@file(genus_script_cleaned.tcl) 1: set_db information_level 4
+  Setting attribute of root '/': 'information_level' = 4
+@file(genus_script_cleaned.tcl) 2: set library {tcbn65gpluswc_ccs.lib}
+@file(genus_script_cleaned.tcl) 3: set_db lib_search_path {/cad/TechLib/TSMC65/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65gplus_200a}
+  Setting attribute of root '/': 'lib_search_path' = /cad/TechLib/TSMC65/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65gplus_200a
+@file(genus_script_cleaned.tcl) 4: set_db library $library
+Freeing libraries in memory (tcbn65gpluswc_ccs.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'tcbn65gpluswc_ccs.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'BHD/Z' has no function.
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD20'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD24'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD20'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD24'
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP64' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP64' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP2' must have an output pin.
+  Setting attribute of root '/': 'library' = tcbn65gpluswc_ccs.lib
+@file(genus_script_cleaned.tcl) 5: set BASEDIR "../presyn"
+@file(genus_script_cleaned.tcl) 6: set OUTDIR "."
+@file(genus_script_cleaned.tcl) 7: set VERILOG_IN1 $BASEDIR/slave.v
+@file(genus_script_cleaned.tcl) 8: set VERILOG_OUT $OUTDIR/slave_syn.v
+@file(genus_script_cleaned.tcl) 9: set SDF_OUT $OUTDIR/slave_syn.sdf
+@file(genus_script_cleaned.tcl) 10: set SDC_OUT $OUTDIR/slave_syn.sdc
+@file(genus_script_cleaned.tcl) 11: read_hdl -v2001 $VERILOG_IN1
+@file(genus_script_cleaned.tcl) 12: elaborate 
+  Library has 441 usable logic and 280 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'slave_top' from file '../presyn/slave.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'spi_slave_fsm_MY_ID0' from file '../presyn/slave.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'slave_ram' from file '../presyn/slave.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'mem' in module 'slave_ram' in file '../presyn/slave.v' on line 279.
+Error   : All assignments within a conditional statement should be either all blocking or all non-blocking. [CDFG-463] [elaborate]
+        : Assignment to 'next_cmd' in file '../presyn/slave.v' on line 126.
+Info    : Deleting HDL design. [CDFG-305]
+        : Design 'spi_slave_fsm_MY_ID0'.
+Info    : Deleting HDL design. [CDFG-305]
+        : Design 'slave_top'.
+Info    : Unable to elaborate the design. [ELAB-4]
+        : Module 'slave_top' contains errors and cannot be elaborated.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+#@ End verbose source ./genus_script_cleaned.tcl
+1
+@genus:root: 3> source genus_script_cleaned.tcl
+Sourcing './genus_script_cleaned.tcl' (Fri Nov 14 17:12:54 IST 2025)...
+#@ Begin verbose source ./genus_script_cleaned.tcl
+@file(genus_script_cleaned.tcl) 1: set_db information_level 4
+  Setting attribute of root '/': 'information_level' = 4
+@file(genus_script_cleaned.tcl) 2: set library {tcbn65gpluswc_ccs.lib}
+@file(genus_script_cleaned.tcl) 3: set_db lib_search_path {/cad/TechLib/TSMC65/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65gplus_200a}
+  Setting attribute of root '/': 'lib_search_path' = /cad/TechLib/TSMC65/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65gplus_200a
+@file(genus_script_cleaned.tcl) 4: set_db library $library
+Freeing libraries in memory (tcbn65gpluswc_ccs.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'tcbn65gpluswc_ccs.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'BHD/Z' has no function.
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD20'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD24'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD20'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD24'
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP64' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP64' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP2' must have an output pin.
+  Setting attribute of root '/': 'library' = tcbn65gpluswc_ccs.lib
+@file(genus_script_cleaned.tcl) 5: set BASEDIR "../presyn"
+@file(genus_script_cleaned.tcl) 6: set OUTDIR "."
+@file(genus_script_cleaned.tcl) 7: set VERILOG_IN1 $BASEDIR/slave.v
+@file(genus_script_cleaned.tcl) 8: set VERILOG_OUT $OUTDIR/slave_syn.v
+@file(genus_script_cleaned.tcl) 9: set SDF_OUT $OUTDIR/slave_syn.sdf
+@file(genus_script_cleaned.tcl) 10: set SDC_OUT $OUTDIR/slave_syn.sdc
+@file(genus_script_cleaned.tcl) 11: read_hdl -v2001 $VERILOG_IN1
+@file(genus_script_cleaned.tcl) 12: elaborate 
+  Library has 441 usable logic and 280 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'slave_top' from file '../presyn/slave.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'spi_slave_fsm_MY_ID0' from file '../presyn/slave.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'slave_ram' from file '../presyn/slave.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'mem' in module 'slave_ram' in file '../presyn/slave.v' on line 279.
+Error   : All assignments within a conditional statement should be either all blocking or all non-blocking. [CDFG-463] [elaborate]
+        : Assignment to 'next_data' in file '../presyn/slave.v' on line 126.
+Info    : Deleting HDL design. [CDFG-305]
+        : Design 'spi_slave_fsm_MY_ID0'.
+Info    : Deleting HDL design. [CDFG-305]
+        : Design 'slave_top'.
+Info    : Unable to elaborate the design. [ELAB-4]
+        : Module 'slave_top' contains errors and cannot be elaborated.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+#@ End verbose source ./genus_script_cleaned.tcl
+1
+@genus:root: 4> source genus_script_cleaned.tcl
+Sourcing './genus_script_cleaned.tcl' (Fri Nov 14 17:13:26 IST 2025)...
+#@ Begin verbose source ./genus_script_cleaned.tcl
+@file(genus_script_cleaned.tcl) 1: set_db information_level 4
+  Setting attribute of root '/': 'information_level' = 4
+@file(genus_script_cleaned.tcl) 2: set library {tcbn65gpluswc_ccs.lib}
+@file(genus_script_cleaned.tcl) 3: set_db lib_search_path {/cad/TechLib/TSMC65/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65gplus_200a}
+  Setting attribute of root '/': 'lib_search_path' = /cad/TechLib/TSMC65/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65gplus_200a
+@file(genus_script_cleaned.tcl) 4: set_db library $library
+Freeing libraries in memory (tcbn65gpluswc_ccs.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'tcbn65gpluswc_ccs.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'BHD/Z' has no function.
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD20'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD24'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD20'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD24'
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP64' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP64' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP2' must have an output pin.
+  Setting attribute of root '/': 'library' = tcbn65gpluswc_ccs.lib
+@file(genus_script_cleaned.tcl) 5: set BASEDIR "../presyn"
+@file(genus_script_cleaned.tcl) 6: set OUTDIR "."
+@file(genus_script_cleaned.tcl) 7: set VERILOG_IN1 $BASEDIR/slave.v
+@file(genus_script_cleaned.tcl) 8: set VERILOG_OUT $OUTDIR/slave_syn.v
+@file(genus_script_cleaned.tcl) 9: set SDF_OUT $OUTDIR/slave_syn.sdf
+@file(genus_script_cleaned.tcl) 10: set SDC_OUT $OUTDIR/slave_syn.sdc
+@file(genus_script_cleaned.tcl) 11: read_hdl -v2001 $VERILOG_IN1
+@file(genus_script_cleaned.tcl) 12: elaborate 
+  Library has 441 usable logic and 280 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'slave_top' from file '../presyn/slave.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'spi_slave_fsm_MY_ID0' from file '../presyn/slave.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'slave_ram' from file '../presyn/slave.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'mem' in module 'slave_ram' in file '../presyn/slave.v' on line 279.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'slave_top'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+-------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (s) | 
+-------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |        0.00 | 
+-------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: slave_top, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: slave_top, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: post_elab
+--------------------------------------------------------
+| Transform          | Accepts | Rejects | Runtime (s) | 
+--------------------------------------------------------
+| hlo_clip_mux_input |       0 |       0 |        0.00 | 
+| hlo_clip           |       0 |       0 |        0.00 | 
+--------------------------------------------------------
+        Applying wireload models.
+        Computing net loads.
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(genus_script_cleaned.tcl) 13: set_units -capacitance 1.0pF -time 1.0ns 
+@file(genus_script_cleaned.tcl) 14: set_db use_tiehilo_for_const unique 
+  Setting attribute of root '/': 'use_tiehilo_for_const' = unique
+@file(genus_script_cleaned.tcl) 15: set_operating_conditions -library tcbn65gpluswc_ccs WCCOM
+@file(genus_script_cleaned.tcl) 16: set_wire_load_model -name G5K -library tcbn65gpluswc_ccs
+@file(genus_script_cleaned.tcl) 17: create_clock -name clk -period 100 -waveform {0 50} [get_ports clk]
+@file(genus_script_cleaned.tcl) 18: set_clock_latency -max 0.25 [get_clocks clk]
+@file(genus_script_cleaned.tcl) 19: set_clock_uncertainty 15 [get_clocks clk]
+@file(genus_script_cleaned.tcl) 20: report clocks
+============================================================
+  Generated by:           Genus(TM) Synthesis Solution 21.19-s055_1
+  Generated on:           Nov 14 2025  05:13:28 pm
+  Module:                 slave_top
+  Technology library:     tcbn65gpluswc_ccs 200
+  Operating conditions:   WCCOM (balanced_tree)
+  Wireload mode:          segmented
+  Area mode:              timing library
+============================================================
+
+Info    : Multimode clock gating check is disabled. [TIM-1000]
+
+ Clock Description
+ ----------------- 
+
+ Clock                               Clock    Source     No of   
+ Name     Period   Rise    Fall      Domain  Pin/Port  Registers 
+-----------------------------------------------------------------
+ clk     100000.0   0.0   50000.0   domain_1   clk          4264 
+
+ Clock Network Latency / Setup Uncertainty
+ ----------------------------------------- 
+
+        Network   Network   Source   Source     Setup        Setup    
+Clock   Latency   Latency  Latency  Latency  Uncertainty  Uncertainty 
+ Name    Rise      Fall      Rise     Fall       Rise         Fall    
+----------------------------------------------------------------------
+clk       250.0     250.0      0.0      0.0      15000.0      15000.0 
+
+ Clock Relationship (with uncertainty & latency)
+ ----------------------------------------------- 
+
+  From    To     R->R      R->F      F->R      F->F  
+-----------------------------------------------------
+  clk    clk   85000.0   35000.0   35000.0   85000.0 
+@file(genus_script_cleaned.tcl) 21: set_load 0.1 [all_outputs]  
+@file(genus_script_cleaned.tcl) 22: set_max_capacitance 0.1 [all_inputs]
+@file(genus_script_cleaned.tcl) 23: get_db [get_designs slave] .tns
+Warning : Could not find requested search value. [SDC-208] [get_designs]
+        : The 'get_designs' command cannot find any designs or subdesigns named 'slave'.
+        : Use get_* commands to find the objects along with a wild card entry in the name of the object to check if the object is existing with different naming style.
+@file(genus_script_cleaned.tcl) 24: set_max_fanout 20 [get_designs slave]
+Warning : Could not find requested search value. [SDC-208] [get_designs]
+        : The 'get_designs' command cannot find any designs or subdesigns named 'slave'.
+Error   : Invalid SDC command option combination. [SDC-204] [set_max_fanout]
+        : The set_max_fanout command does not accept empty object lists
+        : This option is not valid for the indicated SDC command. Check the SDC command and contact Cadence customer support if you believe this option combination should be supported.
+#@ End verbose source ./genus_script_cleaned.tcl
+1
+@genus:root: 5> source genus_script_cleaned.tcl
+Sourcing './genus_script_cleaned.tcl' (Fri Nov 14 17:16:50 IST 2025)...
+#@ Begin verbose source ./genus_script_cleaned.tcl
+@file(genus_script_cleaned.tcl) 1: set_db information_level 4
+  Setting attribute of root '/': 'information_level' = 4
+@file(genus_script_cleaned.tcl) 2: set library {tcbn65gpluswc_ccs.lib}
+@file(genus_script_cleaned.tcl) 3: set_db lib_search_path {/cad/TechLib/TSMC65/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65gplus_200a}
+  Setting attribute of root '/': 'lib_search_path' = /cad/TechLib/TSMC65/tcbn65gplus_200a/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65gplus_200a
+@file(genus_script_cleaned.tcl) 4: set_db library $library
+Freeing libraries in memory (tcbn65gpluswc_ccs.lib)
+
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'tcbn65gpluswc_ccs.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'BHD/Z' has no function.
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD20'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLHQD24'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD20'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'CKLNQD24'
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP64' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP64' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP2' must have an output pin.
+  Setting attribute of root '/': 'library' = tcbn65gpluswc_ccs.lib
+@file(genus_script_cleaned.tcl) 5: set BASEDIR "../presyn"
+@file(genus_script_cleaned.tcl) 6: set OUTDIR "."
+@file(genus_script_cleaned.tcl) 7: set VERILOG_IN1 $BASEDIR/slave.v
+@file(genus_script_cleaned.tcl) 8: set VERILOG_OUT $OUTDIR/slave_syn.v
+@file(genus_script_cleaned.tcl) 9: set SDF_OUT $OUTDIR/slave_syn.sdf
+@file(genus_script_cleaned.tcl) 10: set SDC_OUT $OUTDIR/slave_syn.sdc
+@file(genus_script_cleaned.tcl) 11: read_hdl -v2001 $VERILOG_IN1
+@file(genus_script_cleaned.tcl) 12: elaborate 
+  Library has 441 usable logic and 280 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'slave_top' from file '../presyn/slave.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'spi_slave_fsm_MY_ID0' from file '../presyn/slave.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'slave_ram' from file '../presyn/slave.v'.
+Info    : Processing multi-dimensional arrays. [CDFG-250]
+        : Variable 'mem' in module 'slave_ram' in file '../presyn/slave.v' on line 279.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'slave_top'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+-------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (s) | 
+-------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |        0.00 | 
+-------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: slave_top_288, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: slave_top_288, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+
+Stage: post_elab
+--------------------------------------------------------
+| Transform          | Accepts | Rejects | Runtime (s) | 
+--------------------------------------------------------
+| hlo_clip_mux_input |       0 |       0 |        0.00 | 
+| hlo_clip           |       0 |       0 |        0.00 | 
+--------------------------------------------------------
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(genus_script_cleaned.tcl) 13: set_units -capacitance 1.0pF -time 1.0ns 
+Error   : Multiple designs are available. Specify the design you want to use. [TUI-17] [set_units]
+        : There is no unique design here.
+        : Specify a design by using the cd command to change to that design's directory or specify the design as an argument for the command.
+#@ End verbose source ./genus_script_cleaned.tcl
+Failed on find_unique_design
+
+[17:27:38.155025] periodic Lic check successful
+[17:27:38.155025] Feature usage summary:
+[17:27:38.155026]   Genus_Synthesis

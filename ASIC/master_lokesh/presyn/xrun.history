@@ -1,0 +1,10 @@
+s1(14Nov2025:22:16:30):  xrun -64bit -gui -access +rwc tb_master_top.v master_top.v 
+s2(14Nov2025:22:22:20):  xrun -64bit -gui -access +rwc tb_master_top.v master_top.v 
+s3(14Nov2025:22:23:59):  xrun -64bit -gui -access +rwc tb_master_top.v master_top.v 
+s4(14Nov2025:22:27:21):  xrun -64bit -gui -access +rwc tb_master_top.v master_top.v 
+s5(14Nov2025:22:31:57):  xrun -64bit -gui -access +rwc tb_master_top.v master_top.v 
+s6(15Nov2025:10:17:24):  xrun -64bit -gui -access +rwc tb_master_top.v master_top.v 
+s7(15Nov2025:10:18:29):  xrun -64bit -gui -access +rwc tb.v master.v 
+s8(15Nov2025:10:19:48):  xrun -64bit -gui -access +rwc tb.v master.v 
+s9(15Nov2025:10:23:29):  xrun -64bit -gui -access +rwc tb.v master.v 
+s10(15Nov2025:10:25:29):  xrun -64bit -gui -access +rwc tb.v master_top.v 

@@ -1,0 +1,14 @@
+DEFINE AM_MMD_char AM_MMD_char
+|
+xmsdfc: *W,DLCPTH (/homes/ameghana21/cds.lib,28): cds.lib Invalid path '/homes/ameghana21/AM_MMD_char' (cds.lib command ignored).
+DEFINE PLL_TOP PLL_TOP
+|
+xmsdfc: *W,DLCPTH (/homes/ameghana21/cds.lib,40): cds.lib Invalid path '/homes/ameghana21/PLL_TOP' (cds.lib command ignored).
+DEFINE connectLib connectLib
+|
+xmsdfc: *W,DLCPTH (/homes/ameghana21/cds.lib,41): cds.lib Invalid path '/homes/ameghana21/connectLib' (cds.lib command ignored).
+DEFINE tcbn65gplus_locked tcbn65gplus_locked
+|
+xmsdfc: *W,DLCPTH (/homes/ameghana21/cds.lib,51): cds.lib Invalid path '/homes/ameghana21/tcbn65gplus_locked' (cds.lib command ignored).
+xmsdfc(64): 20.09-s012: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+xmsdfc: *E,SDFUOS: Unable to open SDF source file "../slave_syn.sdf".

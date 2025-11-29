@@ -1,0 +1,2 @@
+xrun -64bit -gui -access +rwc tb.v slave.v
+

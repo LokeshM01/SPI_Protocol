@@ -1,0 +1,220 @@
+xrun(64): 20.09-s012: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s012: Started on Nov 15, 2025 at 09:47:49 IST
+xrun
+	-64bit
+	-gui
+	-access +rwc
+	tb.v
+	slave.v
+DEFINE AM_MMD_char AM_MMD_char
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,28): cds.lib Invalid path '/homes/ameghana21/AM_MMD_char' (cds.lib command ignored).
+DEFINE PLL_TOP PLL_TOP
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,40): cds.lib Invalid path '/homes/ameghana21/PLL_TOP' (cds.lib command ignored).
+DEFINE connectLib connectLib
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,41): cds.lib Invalid path '/homes/ameghana21/connectLib' (cds.lib command ignored).
+DEFINE tcbn65gplus_locked tcbn65gplus_locked
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,51): cds.lib Invalid path '/homes/ameghana21/tcbn65gplus_locked' (cds.lib command ignored).
+DEFINE AM_MMD_char AM_MMD_char
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,28): cds.lib Invalid path '/homes/ameghana21/AM_MMD_char' (cds.lib command ignored).
+DEFINE PLL_TOP PLL_TOP
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,40): cds.lib Invalid path '/homes/ameghana21/PLL_TOP' (cds.lib command ignored).
+DEFINE connectLib connectLib
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,41): cds.lib Invalid path '/homes/ameghana21/connectLib' (cds.lib command ignored).
+DEFINE tcbn65gplus_locked tcbn65gplus_locked
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,51): cds.lib Invalid path '/homes/ameghana21/tcbn65gplus_locked' (cds.lib command ignored).
+DEFINE AM_MMD_char AM_MMD_char
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,28): cds.lib Invalid path '/homes/ameghana21/AM_MMD_char' (cds.lib command ignored).
+DEFINE PLL_TOP PLL_TOP
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,40): cds.lib Invalid path '/homes/ameghana21/PLL_TOP' (cds.lib command ignored).
+DEFINE connectLib connectLib
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,41): cds.lib Invalid path '/homes/ameghana21/connectLib' (cds.lib command ignored).
+DEFINE tcbn65gplus_locked tcbn65gplus_locked
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,51): cds.lib Invalid path '/homes/ameghana21/tcbn65gplus_locked' (cds.lib command ignored).
+DEFINE AM_MMD_char AM_MMD_char
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,28): cds.lib Invalid path '/homes/ameghana21/AM_MMD_char' (cds.lib command ignored).
+DEFINE PLL_TOP PLL_TOP
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,40): cds.lib Invalid path '/homes/ameghana21/PLL_TOP' (cds.lib command ignored).
+DEFINE connectLib connectLib
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,41): cds.lib Invalid path '/homes/ameghana21/connectLib' (cds.lib command ignored).
+DEFINE tcbn65gplus_locked tcbn65gplus_locked
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,51): cds.lib Invalid path '/homes/ameghana21/tcbn65gplus_locked' (cds.lib command ignored).
+DEFINE AM_MMD_char AM_MMD_char
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,28): cds.lib Invalid path '/homes/ameghana21/AM_MMD_char' (cds.lib command ignored).
+DEFINE PLL_TOP PLL_TOP
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,40): cds.lib Invalid path '/homes/ameghana21/PLL_TOP' (cds.lib command ignored).
+DEFINE connectLib connectLib
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,41): cds.lib Invalid path '/homes/ameghana21/connectLib' (cds.lib command ignored).
+DEFINE tcbn65gplus_locked tcbn65gplus_locked
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,51): cds.lib Invalid path '/homes/ameghana21/tcbn65gplus_locked' (cds.lib command ignored).
+Recompiling... reason: file './slave.v' is newer than expected.
+	expected: Fri Nov 14 18:15:44 2025
+	actual:   Fri Nov 14 18:40:52 2025
+DEFINE AM_MMD_char AM_MMD_char
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,28): cds.lib Invalid path '/homes/ameghana21/AM_MMD_char' (cds.lib command ignored).
+DEFINE PLL_TOP PLL_TOP
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,40): cds.lib Invalid path '/homes/ameghana21/PLL_TOP' (cds.lib command ignored).
+DEFINE connectLib connectLib
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,41): cds.lib Invalid path '/homes/ameghana21/connectLib' (cds.lib command ignored).
+DEFINE tcbn65gplus_locked tcbn65gplus_locked
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,51): cds.lib Invalid path '/homes/ameghana21/tcbn65gplus_locked' (cds.lib command ignored).
+DEFINE AM_MMD_char AM_MMD_char
+|
+xmvlog: *W,DLCPTH (/homes/ameghana21/cds.lib,28): cds.lib Invalid path '/homes/ameghana21/AM_MMD_char' (cds.lib command ignored).
+DEFINE PLL_TOP PLL_TOP
+|
+xmvlog: *W,DLCPTH (/homes/ameghana21/cds.lib,40): cds.lib Invalid path '/homes/ameghana21/PLL_TOP' (cds.lib command ignored).
+DEFINE connectLib connectLib
+|
+xmvlog: *W,DLCPTH (/homes/ameghana21/cds.lib,41): cds.lib Invalid path '/homes/ameghana21/connectLib' (cds.lib command ignored).
+DEFINE tcbn65gplus_locked tcbn65gplus_locked
+|
+xmvlog: *W,DLCPTH (/homes/ameghana21/cds.lib,51): cds.lib Invalid path '/homes/ameghana21/tcbn65gplus_locked' (cds.lib command ignored).
+file: tb.v
+	module worklib.tb:v
+		errors: 0, warnings: 0
+file: slave.v
+	module worklib.slave:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 4
+DEFINE AM_MMD_char AM_MMD_char
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,28): cds.lib Invalid path '/homes/ameghana21/AM_MMD_char' (cds.lib command ignored).
+DEFINE PLL_TOP PLL_TOP
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,40): cds.lib Invalid path '/homes/ameghana21/PLL_TOP' (cds.lib command ignored).
+DEFINE connectLib connectLib
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,41): cds.lib Invalid path '/homes/ameghana21/connectLib' (cds.lib command ignored).
+DEFINE tcbn65gplus_locked tcbn65gplus_locked
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,51): cds.lib Invalid path '/homes/ameghana21/tcbn65gplus_locked' (cds.lib command ignored).
+DEFINE AM_MMD_char AM_MMD_char
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,28): cds.lib Invalid path '/homes/ameghana21/AM_MMD_char' (cds.lib command ignored).
+DEFINE PLL_TOP PLL_TOP
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,40): cds.lib Invalid path '/homes/ameghana21/PLL_TOP' (cds.lib command ignored).
+DEFINE connectLib connectLib
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,41): cds.lib Invalid path '/homes/ameghana21/connectLib' (cds.lib command ignored).
+DEFINE tcbn65gplus_locked tcbn65gplus_locked
+|
+xrun: *W,DLCPTH (/homes/ameghana21/cds.lib,51): cds.lib Invalid path '/homes/ameghana21/tcbn65gplus_locked' (cds.lib command ignored).
+DEFINE AM_MMD_char AM_MMD_char
+|
+xmelab: *W,DLCPTH (/homes/ameghana21/cds.lib,28): cds.lib Invalid path '/homes/ameghana21/AM_MMD_char' (cds.lib command ignored).
+DEFINE PLL_TOP PLL_TOP
+|
+xmelab: *W,DLCPTH (/homes/ameghana21/cds.lib,40): cds.lib Invalid path '/homes/ameghana21/PLL_TOP' (cds.lib command ignored).
+DEFINE connectLib connectLib
+|
+xmelab: *W,DLCPTH (/homes/ameghana21/cds.lib,41): cds.lib Invalid path '/homes/ameghana21/connectLib' (cds.lib command ignored).
+DEFINE tcbn65gplus_locked tcbn65gplus_locked
+|
+xmelab: *W,DLCPTH (/homes/ameghana21/cds.lib,51): cds.lib Invalid path '/homes/ameghana21/tcbn65gplus_locked' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+DEFINE AM_MMD_char AM_MMD_char
+|
+xmvlog_cg: *W,DLCPTH (/homes/ameghana21/cds.lib,28): cds.lib Invalid path '/homes/ameghana21/AM_MMD_char' (cds.lib command ignored).
+DEFINE PLL_TOP PLL_TOP
+|
+xmvlog_cg: *W,DLCPTH (/homes/ameghana21/cds.lib,40): cds.lib Invalid path '/homes/ameghana21/PLL_TOP' (cds.lib command ignored).
+DEFINE connectLib connectLib
+|
+xmvlog_cg: *W,DLCPTH (/homes/ameghana21/cds.lib,41): cds.lib Invalid path '/homes/ameghana21/connectLib' (cds.lib command ignored).
+DEFINE tcbn65gplus_locked tcbn65gplus_locked
+|
+xmvlog_cg: *W,DLCPTH (/homes/ameghana21/cds.lib,51): cds.lib Invalid path '/homes/ameghana21/tcbn65gplus_locked' (cds.lib command ignored).
+		worklib.slave:v <0x73127516>
+			streams:  27, words: 12014
+		worklib.tb:v <0x5c8787f2>
+			streams:  10, words: 21906
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:              36      36
+		Scalar wires:           10       -
+		Vectored wires:          1       -
+		Always blocks:           4       4
+		Initial blocks:          2       2
+		Cont. assignments:       2       5
+		Pseudo assignments:      5       5
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb:v
+DEFINE AM_MMD_char AM_MMD_char
+|
+xmsim: *W,DLCPTH (/homes/ameghana21/cds.lib,28): cds.lib Invalid path '/homes/ameghana21/AM_MMD_char' (cds.lib command ignored).
+DEFINE PLL_TOP PLL_TOP
+|
+xmsim: *W,DLCPTH (/homes/ameghana21/cds.lib,40): cds.lib Invalid path '/homes/ameghana21/PLL_TOP' (cds.lib command ignored).
+DEFINE connectLib connectLib
+|
+xmsim: *W,DLCPTH (/homes/ameghana21/cds.lib,41): cds.lib Invalid path '/homes/ameghana21/connectLib' (cds.lib command ignored).
+DEFINE tcbn65gplus_locked tcbn65gplus_locked
+|
+xmsim: *W,DLCPTH (/homes/ameghana21/cds.lib,51): cds.lib Invalid path '/homes/ameghana21/tcbn65gplus_locked' (cds.lib command ignored).
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /cad/tools/cadence/XCELIUM/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm tb.clk tb.led tb.read_back_data tb.rst_btn tb.spi_cs_n_in tb.spi_miso_out tb.spi_mosi_in tb.spi_sclk_in
+Created probe 1
+xcelium> run
+[0] --- Applying Reset ---
+[60000] --- Reset Released ---
+--- Test 1: Writing 0xAAAA to Addr 0x05 ---
+[1530000] TB: SPI WRITE: Addr=0x05, Data=0xaaaa. (LED should show 0xaaaa)
+--- Test 2: Reading from Addr 0x05 ---
+[3000000] TB: SPI READ:  Addr=0x05, Data=0x0000
+>>> FAIL: Read data (0x0000) != 0xAAAA
+--- Test 3: Writing 0x1234 to Addr 0x42 ---
+[4670000] TB: SPI WRITE: Addr=0x42, Data=0x1234. (LED should show 0x1234)
+--- Test 4: Reading from Addr 0x42 ---
+[6140000] TB: SPI READ:  Addr=0x42, Data=0x0000
+>>> FAIL: Read data (0x0000) != 0x1234
+--- Test 5: Reading from Addr 0x05 again ---
+[7810000] TB: SPI READ:  Addr=0x05, Data=0xaaaa
+>>> PASS: Read data (0xaaaa) persists
+--- Test Sequence Complete ---
+Simulation complete via $finish(1) at time 8110 NS + 0
+./tb.v:203         $finish;
+xcelium> ^C
+xcelium> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun(64)	20.09-s012: Exiting on Nov 15, 2025 at 10:16:47 IST  (total: 00:28:58)
